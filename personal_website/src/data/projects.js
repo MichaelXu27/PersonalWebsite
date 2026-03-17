@@ -3,6 +3,20 @@ import ResearchReport from '../assets/CSE_4106___Data_Science_for_Complex_Networ
 
 const projects = [
   {
+    id: '06',
+    title: 'Job Application Tracker',
+    preview: 'Full-stack Next.js app for tracking job applications.',
+    details: 'A full-stack web app built with Claude Code and Antigravity for managing and visualizing my personal job application process. Features user auth with JWT sessions, a filterable and sortable application table, and a dashboard with stats, a doughnut chart, and a custom SVG lollipop timeline. Supports bulk import/export via Excel (.xlsx), with client-side column normalization and date inference. All filtering, sorting, and pagination are computed client-side for a snappy experience.',
+    image: null,
+    tech: ['Next.js 14', 'TypeScript', 'Prisma', 'SQLite', 'NextAuth.js', 'Tailwind CSS', 'Zod', 'Chart.js', 'SheetJS'],
+    links: [
+      {
+        label: 'GitHub',
+        url: 'https://github.com/MichaelXu27/jobApplicationTracker'
+      }
+    ],
+  },
+  {
     id: '01',
     title: 'Personal Website',
     preview: 'A responsive portfolio built with React.',
@@ -49,6 +63,38 @@ const projects = [
       {
         label: 'Research Report',
         url: ResearchReport
+      }
+    ],
+  },
+  {
+    id: '05',
+    title: 'Coach Pass Generator',
+    preview: 'Automated credential document generator for US Junior Nationals.',
+    details: 'A Python automation script I built for the 2024 and 2025 US Junior National Championships to batch-generate personalized coaching credential passes. Reads coach data (name, USAB ID, membership status, background check, SafeSport certification) from a CSV, merges it into a Word template, automatically finds and inserts each coach\'s photo, and outputs individualized .docx files — processing 213 coach records in a single run.',
+    image: null,
+    tech: ['Python', 'pandas', 'docxtpl'],
+    links: [
+      {
+        label: 'GitHub',
+        url: 'https://github.com/MichaelXu27/CoachPassGenerator'
+      }
+    ],
+  },
+  {
+    id: '04',
+    title: 'Cat vs Environment',
+    preview: 'A semester-long collaborative Unity platformer game.',
+    details: 'A semester-long group project where quick reflexes and sharp instincts are your best allies as you weave past obstacles, dodge danger, and collect treasures. Play as a cat navigating hazards like rocks, cars, and missiles while collecting cakes, fruits, and sweets. Features double-jump, directional dash, and power-ups including invincibility stars and extra lives. Built with 4 collaborators over the course of a semester.',
+    image: null,
+    tech: ['Unity', 'C#', 'ShaderLab', 'HLSL'],
+    links: [
+      {
+        label: 'Play on itch.io',
+        url: 'https://bombim21.itch.io/cat-vs-environment'
+      },
+      {
+        label: 'GitHub',
+        url: 'https://github.com/MichaelXu27/Cat_vs_Environment'
       }
     ],
   },
