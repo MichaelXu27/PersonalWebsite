@@ -17,7 +17,7 @@ function About() {
       </section>
       <section className="mb-10">
         <p className="text-slate-400 leading-relaxed">
-          I'm currently looking for internship opportunities for the summer of 2026. I have experience in building backend systems using Java and Python, as well as frontend development using React and Tailwind CSS. I'm interested in full-time positions starting in 2027. I'm also open to remote positions.
+          I'm currently looking for internship opportunities for the summer of 2026. I have experience in building backend systems using Java and Python, as well as fullstack development using React and Tailwind CSS. I'm interested in full-time positions starting in 2027. I'm also open to remote positions.
         </p>
       </section>
       <section className="mb-10">
