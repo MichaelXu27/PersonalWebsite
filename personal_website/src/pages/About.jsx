@@ -17,7 +17,7 @@ function About() {
       </section>
       <section className="mb-10">
         <p className="text-slate-400 leading-relaxed">
-          I'm currently looking for internship opportunities for the summer of 2026. I have experience in building backend systems using Java and Python, as well as fullstack development using React and Tailwind CSS. I'm interested in full-time positions starting in 2027. I'm also open to remote positions.
+          This upcoming summer you can find me at Zocdoc in Soho, NY!. I'm looking forward to the fast-paced startup environment and diving into the world of health tech! I'm going to continue grinding leetcode and building cool projects on the side. Stay tuned for more updates! I'll also be applying to Fall and Spring Coop roles.
         </p>
       </section>
       <section className="mb-10">
