@@ -3,6 +3,21 @@ import ResearchReport from '../assets/CSE_4106___Data_Science_for_Complex_Networ
 
 const projects = [
   {
+    id: '07',
+    category: 'webdev',
+    title: 'Workout Coach',
+    preview: 'Real-time AI workout form coach — HackWashU 2026 finalist.',
+    details: 'A real-time AI workout coach that delivers rep counting and live form feedback by integrating a YOLOv8 pose-estimation model directly into a Next.js frontend, enabling frame-by-frame quality analysis with no backend roundtrips. Uses multi-persona LLM routing with configurable prompt tuning to reduce irrelevant suggestions and personalize sessions, and persists workout history and session state in a normalized Supabase schema, deployed end-to-end on Vercel. Finalist at HackWashU 2026 and the Mayfield AI Garage Pitch, selected from 50+ competing teams.',
+    image: null,
+    tech: ['React', 'Next.js', 'TypeScript', 'Supabase', 'YOLOv8', 'Vercel'],
+    links: [
+      {
+        label: 'GitHub',
+        url: 'https://github.com/MichaelXu27/WorkoutCoach'
+      }
+    ],
+  },
+  {
     id: '06',
     category: 'webdev',
     title: 'Job Application Tracker',
@@ -56,7 +71,7 @@ const projects = [
     category: 'datascience',
     title: 'Musical-Collaboration-Network-Analysis',
     preview: 'A large-scale link prediction on a Discogs music collaboration network.',
-    details: 'This project performs large-scale link prediction on a Discogs music collaboration network spanning more than 130 years of music history (1897–2025). It analyzes collaboration patterns among over 1,000 artists connected by more than 10,000 edges, using multiple machine learning and graph-based approaches to predict future collaborations. A central focus of the work is era-specific modeling, which accounts for major shifts in music culture, technology, and artist ecosystems across five distinct musical periods. Feel free to check out the project repository below for a more detailed description.',
+    details: 'Large-scale link prediction on a Discogs music collaboration network spanning 130 years (1897–2025). I parsed a 10GB+ Discogs XML dump via memory-efficient iterative parsing to build a graph of 1,000+ artists and 10,000+ edges, enriched with Spotify API genre data. Future collaborations are predicted using graph link-prediction methods (Common Neighbors, Jaccard, Adamic-Adar, Louvain) in NetworkX, reaching 0.85 AUC with a grid-search-optimized hybrid model combining structural and community features. An era-based temporal framework splits the network into 5 musical periods with chronological train/test splits, outperforming a single global model by 5–10% AUC. Feel free to check out the project repository below for a more detailed description.',
     image: null,
     tech: ['Python', 'pandas', 'NumPy', 'NetworkX', 'scikit-learn', 'python-louvain', 'Spotipy', 'Gephi'],
     links: [
