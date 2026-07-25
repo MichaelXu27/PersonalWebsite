@@ -1,4 +1,4 @@
-import Resume from '../assets/Michael_Xu_s_Resume_Fullstack.pdf'
+import Resume from '../assets/Michael_Xu_Resume.pdf'
 import experiences from '../data/experiences.js'
 
 function Experiences() {

@@ -17,7 +17,7 @@ function About() {
       </section>
       <section className="mb-10">
         <p className="text-slate-400 leading-relaxed">
-          This summer you can find me at Zocdoc in Soho, NY! I'm loving the fast-paced environment and diving into the world of health tech. I'm going to continue grinding leetcode and building cool projects on the side. Stay tuned for more updates! I'll also be applying to Fall and Spring Co-op roles.
+          This summer you can find me at Zocdoc in Soho, NY! I'm loving the fast-paced environment and diving into the world of health tech. I'm going to continue grinding leetcode and building cool projects on the side. Stay tuned for more updates! I'm also currently looking for full-time roles for after I graduate.
         </p>
       </section>
       <section className="mb-10">

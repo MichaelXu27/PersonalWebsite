@@ -1,4 +1,4 @@
-import { Routes, Route, NavLink } from 'react-router-dom'
+import { Routes, Route, NavLink, Navigate } from 'react-router-dom'
 import StarfieldBackground from './components/StarfieldBackground.jsx'
 import About from './pages/About.jsx'
 import Links from './pages/Links.jsx'
@@ -6,7 +6,8 @@ import Projects from './pages/Projects.jsx'
 import Hobbies from './pages/Hobbies.jsx'
 import ProjectDetail from './pages/ProjectDetail.jsx'
 import Experiences from './pages/Experiences.jsx'
-import Blogs from './pages/Blogs.jsx'
+// Blogs page is disabled for now — re-enable the import, NavLink, and Route below to restore it.
+// import Blogs from './pages/Blogs.jsx'
 
 function NavLinkClasses({ isActive }) {
   return `text-left rounded-lg px-3 py-2 text-sm transition-colors hover:text-white ${isActive ? 'text-white' : 'text-slate-400'
@@ -35,9 +36,9 @@ function App() {
                 <NavLink to="/hobbies" className={NavLinkClasses}>
                   Hobbies
                 </NavLink>
-                <NavLink to="/blogs" className={NavLinkClasses}>
+                {/* <NavLink to="/blogs" className={NavLinkClasses}>
                   Blogs
-                </NavLink>
+                </NavLink> */}
                 <NavLink to="/links" className={NavLinkClasses}>
                   Links
                 </NavLink>
@@ -53,7 +54,8 @@ function App() {
               <Route path="/experiences" element={<Experiences />} />
               <Route path="/projects/:projectId" element={<ProjectDetail />} />
               <Route path="/hobbies" element={<Hobbies />} />
-              <Route path="/blogs" element={<Blogs />} />
+              {/* <Route path="/blogs" element={<Blogs />} /> */}
+              <Route path="/blogs" element={<Navigate to="/" replace />} />
               <Route path="/links" element={<Links />} />
             </Routes>
           </main>
