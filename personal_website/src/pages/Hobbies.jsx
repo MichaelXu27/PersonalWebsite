@@ -16,9 +16,6 @@ function Hobbies() {
                     I've won numerous national level tournaments, won the XXIX Pan Am Junior Championships, and qualified for the 2023 World Junior Championships. Now in college, I've continued to play
                     badminton, and I'm currently representing Washington University in the collegiate badminton scene.
                 </p>
-                <p className="mt-4 text-slate-400 leading-relaxed">
-                    I also enjoy playing a variety of games, such as Valorant and Genshin Impact (although it's been a while). I don't have as many notable achievements in these games, but I did end up peaking Ascendant in Valorant and creating a top 100 Xiao in the world in Genshin Impact.
-                </p>
             </section>
         </div>
 
