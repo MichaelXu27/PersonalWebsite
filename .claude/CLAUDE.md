@@ -1,4 +1,6 @@
-# PersonalWebsite — Claude Context
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 ## Project Overview
 
@@ -11,6 +13,9 @@ A personal portfolio SPA for Michael Xu, a CS student at Washington University i
 - **Tailwind CSS v4** (via `@tailwindcss/vite` plugin)
 - **p5.js** — particle background animation
 - **gh-pages** — deployment to GitHub Pages
+- **ESLint 10** (flat config, `eslint.config.js`) — lints `**/*.js` only; there is no `lint` npm script, run `npx eslint .`
+
+> Note: the `README.md` in `personal_website/` is the stock Vite React+TS template and references TypeScript/tsconfig that this project does **not** use — treat it as boilerplate, not project docs. This is a plain JS (`.jsx`) codebase.
 
 ## Repository Structure
 
@@ -27,13 +32,16 @@ personal_website/          # Main project root (run all commands here)
 │   │   └── ParticleBackground.jsx  # p5.js alternative background
 │   ├── pages/
 │   │   ├── About.jsx, Projects.jsx, ProjectDetail.jsx
-│   │   ├── Experiences.jsx        # WIP
+│   │   ├── Experiences.jsx        # Renders data/experiences.js grouped by category
+│   │   ├── Blogs.jsx              # Renders data/blogs.js
 │   │   ├── Hobbies.jsx            # Opens badminton modal
 │   │   └── Links.jsx
 │   ├── portals/
 │   │   └── badmintonPortal.jsx    # Modal content for hobbies
 │   ├── data/
-│   │   └── projects.js            # Static project data (3 projects)
+│   │   ├── projects.js            # Static project data (array of {id, category, title, preview, details, image, tech, links})
+│   │   ├── experiences.js         # Array of {category, items:[{title, company, period, description, tags}]}
+│   │   └── blogs.js               # Array of {id, title, date, summary, tags, link}
 │   └── assets/                    # Images, PDFs, logo
 ├── index.html
 ├── vite.config.js                 # base: '/PersonalWebsite/'
@@ -55,10 +63,10 @@ npm run deploy    # Build + push to gh-pages branch
 
 - **Dark theme**: black background, `text-slate-400/300` hierarchy, `sky-400` for accent links
 - **Layout**: sidebar nav on desktop (`md:` breakpoint), top bar on mobile
-- **Routing**: dynamic project pages at `/projects/:projectId`; `NavLink` with active-state styling
-- **Background**: `StarfieldBackground` is mounted in `App.jsx` at `z-0`; all content sits at `z-10`
+- **Routing**: all routes are defined in `App.jsx` (About `/`, Experiences, Projects, Hobbies, Blogs, Links, plus dynamic `/projects/:projectId`); nav lives in the same file via `NavLink` with active-state styling. Adding a page = new route in `App.jsx` + a `NavLink`.
+- **Background**: `StarfieldBackground` is mounted in `App.jsx` behind content; the app is a fixed-height flex/grid shell (`h-screen overflow-hidden`) where only `<main>` scrolls (`overflow-y-auto scrollbar-hide` via `tailwind-scrollbar-hide`)
 - **Modals**: use `Modal.jsx` (React Portal) — supports Escape key dismissal
-- **Static data**: project content lives in `data/projects.js`, not fetched from an API
+- **Static data**: all page content is hardcoded in `data/*.js` arrays and imported directly by pages — there is no fetching. To edit site content, edit these files, not the components.
 - **No backend**: Spring Boot backend was removed; `api.js` is a stub only
 
 ## Deployment Notes

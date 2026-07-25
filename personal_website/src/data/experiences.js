@@ -3,11 +3,18 @@ const experiences = [
     category: 'Work',
     items: [
       {
-        title: 'Backend Software Engineer',
+        title: 'Software Engineer Intern',
+        company: 'Zocdoc',
+        period: 'Summer 2026',
+        description: 'Shipped a React payment-recovery module unifying failed-payment status, balance, spend-lock state, and retry timing on the billing page, replacing a manual flow behind ~20% of billing support tickets. Built a C# endpoint that charges outstanding balances on demand outside the daily billing queue, cutting balance resolution from 24h to ~5 min with locking to prevent double-charges. Extended a C# read endpoint to power decline reasons and per-account restriction state.',
+        tags: ['React', 'TypeScript', 'C#', 'Payments']
+      },
+      {
+        title: 'Software Engineer Intern',
         company: 'NISC',
-        period: 'Current',
-        description: 'Modernizing enterprise billing systems by converting legacy PL/SQL scripts into modular Java hooks. Reduced batch runtime on a platform processing 90M+ statements per cycle.',
-        tags: ['Java', 'PL/SQL', 'Backend', 'Performance']
+        period: 'May 2025 – Sept 2025',
+        description: 'Re-architected legacy billing hooks into modular Spring Boot services with structured Java DAO/BO layers, delivering a 40% runtime speedup on 100M+ statement batches. Established a repeatable PL/SQL-to-Java modernization pipeline and migration playbook across 100+ legacy billing hooks.',
+        tags: ['Java', 'Spring Boot', 'SQL', 'Backend', 'Performance']
       }
     ]
   },
@@ -42,8 +49,8 @@ const experiences = [
     items: [
       {
         title: 'UrsaWorks Robotics — Computer Vision Team Lead',
-        description: 'Led perception pipeline development for autonomous robotics systems, owning end-to-end computer vision from data labeling through production deployment. Implemented YOLO-based real-time object detection with Co-DETR auto-labeling to reduce annotation overhead. Optimized inference latency and throughput-accuracy tradeoffs on NVIDIA Jetson Orin Nano using DeepStream for GPU-accelerated pipelines. Focused on embedded GPU constraints including memory bandwidth, batching, and power efficiency.',
-        tags: ['YOLO', 'Computer Vision', 'DeepStream', 'Jetson Orin Nano', 'Object Detection', 'Edge ML', 'GPU Optimization', 'Team Leadership']
+        description: 'Sole frontend maintainer of a React platform supporting 100+ active members, shipping features and fixes across all engineering teams and cutting page-load time ~40% through component refactoring and asset optimization. Led perception pipeline development for autonomous robotics: end-to-end computer vision from data labeling through production deployment, with YOLO-based real-time object detection and Co-DETR auto-labeling on NVIDIA Jetson Orin Nano via DeepStream — contributing to a top-8 of 24 finish at RoboMaster Nationals.',
+        tags: ['React', 'YOLO', 'Computer Vision', 'DeepStream', 'Jetson Orin Nano', 'Edge ML', 'RoboMaster', 'Team Leadership']
       },
       {
         title: 'CUDA Parallel Computing Kernels',

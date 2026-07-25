@@ -1,4 +1,4 @@
-import Resume from '../assets/Michael_Xu_s_Resume_Fullstack.pdf'
+import Resume from '../assets/Michael_Xu_Resume.pdf'
 function Links() {
   return (
     <div className="w-full">

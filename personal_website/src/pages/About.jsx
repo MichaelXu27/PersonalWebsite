@@ -12,12 +12,12 @@ function About() {
       </header>
       <section className="mb-10">
         <p className="text-slate-400 leading-relaxed">
-          Hello! My name is Michael, and I'm currently a junior at Washington University in St. Louis, pursuing a degree in Computer Science with minors in Human-Computer Interaction and Electrical Engineering. I enjoy working on scalable backend systems as well as hands-on projects in game development and web applications. I am particularly interested in AI and how it is being used both in the workforce and in daily life, from optimizing business processes to enhancing the way people interact with technology. I'm excited to continue exploring opportunities where I can apply these interests to create meaningful and impactful solutions.
+          Hello! My name is Michael, and I'm a rising senior at Washington University in St. Louis, where I'm in a 3+1 accelerated program — finishing my undergrad in three years and a master's in one — putting me on track for an M.S. in Computer Science by May 2027, with minors in Human-Computer Interaction and Electrical Engineering. I enjoy working on scalable backend systems as well as hands-on projects in game development and web applications. I am particularly interested in AI and how it is being used both in the workforce and in daily life, from optimizing business processes to enhancing the way people interact with technology. I'm excited to continue exploring opportunities where I can apply these interests to create meaningful and impactful solutions.
         </p>
       </section>
       <section className="mb-10">
         <p className="text-slate-400 leading-relaxed">
-          This upcoming summer you can find me at Zocdoc in Soho, NY!. I'm looking forward to the fast-paced startup environment and diving into the world of health tech! I'm going to continue grinding leetcode and building cool projects on the side. Stay tuned for more updates! I'll also be applying to Fall and Spring Coop roles.
+          This summer you can find me at Zocdoc in Soho, NY! I'm loving the fast-paced environment and diving into the world of health tech. I'm going to continue grinding leetcode and building cool projects on the side. Stay tuned for more updates! I'm also currently looking for full-time roles for after I graduate.
         </p>
       </section>
       <section className="mb-10">
