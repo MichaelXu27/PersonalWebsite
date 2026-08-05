@@ -3,7 +3,6 @@ import StarfieldBackground from './components/StarfieldBackground.jsx'
 import About from './pages/About.jsx'
 import Links from './pages/Links.jsx'
 import Projects from './pages/Projects.jsx'
-import Hobbies from './pages/Hobbies.jsx'
 import ProjectDetail from './pages/ProjectDetail.jsx'
 import Experiences from './pages/Experiences.jsx'
 // Blogs page is disabled for now — re-enable the import, NavLink, and Route below to restore it.
@@ -33,9 +32,6 @@ function App() {
                 <NavLink to="/projects" className={NavLinkClasses}>
                   Projects
                 </NavLink>
-                <NavLink to="/hobbies" className={NavLinkClasses}>
-                  Hobbies
-                </NavLink>
                 {/* <NavLink to="/blogs" className={NavLinkClasses}>
                   Blogs
                 </NavLink> */}
@@ -53,7 +49,7 @@ function App() {
               <Route path="/projects" element={<Projects />} />
               <Route path="/experiences" element={<Experiences />} />
               <Route path="/projects/:projectId" element={<ProjectDetail />} />
-              <Route path="/hobbies" element={<Hobbies />} />
+              <Route path="/hobbies" element={<Navigate to="/" replace />} />
               {/* <Route path="/blogs" element={<Blogs />} /> */}
               <Route path="/blogs" element={<Navigate to="/" replace />} />
               <Route path="/links" element={<Links />} />
